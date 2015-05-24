@@ -4,5 +4,4 @@
 #
 
 ## Setup a working desktop.
-tint2 & nmapplet & xcompmgr & nitrogen --restore & mate-power-manager & 
-volumeicon &
+tint2 & nmapplet & xcompmgr & nitrogen --restore & mate-power-manager & volumeicon &
