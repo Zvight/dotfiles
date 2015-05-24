@@ -1,0 +1,8 @@
+#
+# OpenBox/autostart
+# https://ayy.io/dotfiles
+#
+
+## Setup a working desktop.
+tint2 & nmapplet & xcompmgr & nitrogen --restore & mate-power-manager & 
+volumeicon &
