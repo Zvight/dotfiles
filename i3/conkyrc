@@ -1,0 +1,9 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+Uptime: ${exec uptime -p} | ${if_up wlan1}${downspeedf wlan1} kbps Down - ${upspeedf wlan1} kbps Up${endif} | ${time %a %b %d %k:%M}
