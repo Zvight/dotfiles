@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-Uptime: ${exec uptime -p} | ${if_up wlan1}${downspeedf wlan1} kbps Down - ${upspeedf wlan1} kbps Up${endif} | ${time %a %b %d %k:%M}
+Hello, ${exec whoami}. ${exec hostname} has been ${exec uptime -p} and the date is ${time %a %b %d} at ${time %k:%M}.

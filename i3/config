@@ -1,11 +1,8 @@
 set $mod Mod1
-font pangu:terminus 8
+font terminus 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -129,7 +126,7 @@ bar {
   status_command conky -c ~/.i3/conkyrc
   height 35
   colors {
-    background #000000
+    background http://www.slackware.com/
     statusline #FFFFFF
     separator #000000
 
@@ -140,6 +137,7 @@ bar {
     binding_mode       #000000 #6ac0a7 #ffffff
   }
 }
+
 
 ## i3-Gaps Stuff ##
 for_window [class="^.*"] border pixel 5
@@ -184,14 +182,13 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# smart_gaps on
+# Autostart
+exec nitrogen --restore & # Restore the wallpaper.
+exec nm-applet          & # Start the network manager.
+exec mate-power-manager & # Start Mate Power Manager.
+exec volumeicon         & # Start volumeicon.
 
-## Autostart ##
-exec nitrogen --restore &
-exec nm-applet &
-exec compton -cCGfF -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88 &
-
-## Colors ##
+# Colors
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #f0e387 #ffffff #979d6d
 client.focused_inactive #333333 #5f676a #ffffff #484e50
@@ -199,7 +196,6 @@ client.unfocused        #333333 #030e22 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 client.background       #ffffff
-# # # # # # #
 
 # Lock the screen.
 bindsym control+mod1+l exec i3lock -c 000000
