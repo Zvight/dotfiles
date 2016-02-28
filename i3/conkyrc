@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-Hello, ${exec whoami}. ${exec hostname} has been ${exec uptime -p} and the date is ${time %a %b %d} at ${time %k:%M}.
+Hello, ${exec whoami}. ${exec hostname} has been ${exec uptime -p}, the date is ${time %a %b %d, and the time is %H:%M}.

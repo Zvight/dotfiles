@@ -126,12 +126,12 @@ bar {
   status_command conky -c ~/.i3/conkyrc
   height 35
   colors {
-    background http://www.slackware.com/
+    background #1d1f21
     statusline #FFFFFF
     separator #000000
 
-    focused_workspace  #000000 #f0e387 #030e22
-    active_workspace   #000000 #f0e387 #030e22
+    focused_workspace  #000000 #5e8d87 #030e22
+    active_workspace   #000000 #5e8d87 #030e22
     inactive_workspace #000000 #030e22 #ffffff
     urgent_workspace   #000000 #b7d47b #ffffff
     binding_mode       #000000 #6ac0a7 #ffffff
@@ -187,11 +187,12 @@ exec nitrogen --restore & # Restore the wallpaper.
 exec nm-applet          & # Start the network manager.
 exec mate-power-manager & # Start Mate Power Manager.
 exec volumeicon         & # Start volumeicon.
+exec redshift-gtk	& # Start RedShift.
 
 # Colors
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #f0e387 #ffffff #979d6d
-client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.focused          #85678f #f0e387 #ffffff #979d6d
+client.focused_inactive #85678f #5f676a #ffffff #484e50
 client.unfocused        #333333 #030e22 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
