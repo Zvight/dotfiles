@@ -5,5 +5,8 @@ update_interval 1
 total_run_times 0
 use_spacer none
 
+default_color FFFFFF
+color1 #00ff00
+
 TEXT
-Hello, ${exec whoami}. ${exec hostname} has been ${exec uptime -p}, the date is ${time %a %b %d, and the time is %H:%M}.
+Hello, ${exec whoami}@${exec hostname} | Date: ${time %a %b %d} | Time: ${time %H:%M} | Battery: ${battery_bar} (${battery_percent}%) | Wi-Fi: ${wireless_essid} | Uptime: ${uptime} | CPU: ${cpubar} (${cpu}%) |

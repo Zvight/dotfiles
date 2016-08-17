@@ -123,8 +123,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command conky -c ~/.i3/conkyrc
-  height 35
+  status_command conky -c ~/.config/i3/conkyrc
+  height 20
   colors {
     background #1d1f21
     statusline #FFFFFF
@@ -183,11 +183,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Autostart
-exec nitrogen --restore & # Restore the wallpaper.
-exec nm-applet          & # Start the network manager.
-exec mate-power-manager & # Start Mate Power Manager.
-exec volumeicon         & # Start volumeicon.
-exec redshift-gtk	& # Start RedShift.
+exec nitrogen --restore &
 
 # Colors
 # class                 border  backgr. text    indicator
