@@ -5,8 +5,5 @@ update_interval 1
 total_run_times 0
 use_spacer none
 
-default_color FFFFFF
-color1 #00ff00
-
 TEXT
 Hello, ${exec whoami}@${exec hostname} | Date: ${time %a %b %d} | Time: ${time %H:%M} | Wi-Fi: ${wireless_essid} | Uptime: ${uptime} | CPU: ${cpubar} (${cpu}%) | Battery: ${battery_bar} (${battery_percent}%) |
